@@ -1,36 +1,89 @@
-.container {
-  display: flex;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+	--dark: #1b1e23;
+	--white: #fff;
+	--light-blue: #3da5d9;
+	--dark-blue: #2364aa;
 }
 
+html {
+	font-family: 'Roboto', sans-serif;
+}
+
+#start-button {
+	font-family: 'Roboto', sans-serif, Arial, Helvetica;
+	font-size: 1.17em;
+}
+
+.container {
+	display: flex;
+}
 
 .grid {
-  width: 200px;
-  height: 400px;
-  display: flex;
-  flex-wrap: wrap;
-  background-color: yellow;
+	width: 200px;
+	height: 400px;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: yellow;
+	/* height: 75vh; */
 }
 
 .grid div {
-  height: 20px;
-  width: 20px;
+	height: 20px;
+	width: 20px;
 }
 
 .tetromino {
-  background-color: blue;
+	background-color: deepskyblue;
 }
 
-
 .mini-grid {
-  margin-left: 50px;
-  width: 80px;
-  height: 80px;
-  display: flex;
-  flex-wrap: wrap;
-  background-color: yellow;
+	margin-left: 50px;
+	width: 80px;
+	height: 80px;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: yellow;
 }
 
 .mini-grid div {
-  height: 20px;
-  width: 20px;
+	height: 20px;
+	width: 20px;
+}
+
+.wrapper {
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	justify-items: baseline;
+	align-content: center;
+
+	height: 100vh;
+}
+
+.align-center {
+	align-self: center;
+}
+
+.btn {
+	border-radius: 10px;
+	padding: .5em 1.9em;
+	border: 0;
+}
+
+.btn-spacing {
+	margin: 1.5em 1.5em 2em 0;
+}
+
+.btn-dark {
+	background-color: var(--light-blue);
+	color: var(--white);
+}
+
+.start-score {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: baseline;
+	justify-self: center;
 }
